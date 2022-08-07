@@ -1,4 +1,4 @@
-#Adventure Game
+# Adventure Game
 As you can see, this is only a very short game with a couple of choices available to the player:
 
 - The game gives players a description of what's happening, and then asks them to make a choice.
