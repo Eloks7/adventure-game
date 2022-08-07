@@ -85,3 +85,19 @@ def field(weapon, villain):
     else:
         cave(weapon, villain)
 
+# validity function checks for invalid input
+def validity(question, answers):
+    while True:
+        choice = input(question).lower()
+        if choice in answers:
+            return choice
+        # User will keep trying till valid input is provided
+
+
+def restart():
+    yes_no = validity("Would you like to play again? (y/n)", ["y", "n"])
+    if yes_no == "y":
+        print_pause("\n\nExcellent! Restarting the game ...\n")
+        play_game()
+    else:
+        print_pause("\nThanks for playing! See you next time.\n")
