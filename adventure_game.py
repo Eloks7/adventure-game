@@ -101,3 +101,14 @@ def restart():
         play_game()
     else:
         print_pause("\nThanks for playing! See you next time.\n")
+
+def play_game():
+    weapon = "dagger"
+    villains = (["wicked fairy", "pirate", "dragon", "troll",
+                 "gorgon"])
+    villain = random.choice(villains)
+    intro(villain)
+    field(weapon, villain)
+
+
+play_game()
